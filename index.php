@@ -10,8 +10,8 @@
         <link href="css/grayscale.min.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-faded">
-            <a class="navbar-brand" id="botao-teste" href="#entrada"></a>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" id="botao-teste" href="#entrada"><img class="img-responsive" src="images/logo-branca.png"margin-left: style="margin-left:30px;" width="100" height="30"/></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -42,7 +42,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 mx-auto" id="botao-teste">
-                            <img class="img-responsive" src="images/Logo circle.png" width="200" height="200"/> 
+                            <img class="img-responsive" src="images/Logo circle.png" width="250" height="250"/> 
                             <p class="display-4" style="color: #000">XVIª Semana Interdisciplinar de Tecnologia e Sociedade</p>
                             <a href="#" class="btn btn-circle js-scroll-trigger">
                                 <i class="fa fa-angle-down animated"></i>
