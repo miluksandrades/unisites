@@ -273,7 +273,7 @@
                 </div>
             </div>
             <br/>
-            <p class="display-4" style="color: #fff"><b>#SitesUnievangelica</b></p>
+            <p class="lead" style="color: #fff"><b>#SitesUnievangelica</b></p>
             <br/>
             <br/>
             <br/>
