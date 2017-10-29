@@ -279,9 +279,9 @@
             <br/>
         </div>
         <br/>
-        <div class="container-fluid justify-content-center" style="text-align: center">
+        <!--<div class="container-fluid justify-content-center" style="text-align: center">
             <img class="img-responsive" src="images/logos.png" width="650" height="70"/>
-        </div>
+        </div>-->
         <br/>
         <script src="js/jquery.min.js" type="text/javascript"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
