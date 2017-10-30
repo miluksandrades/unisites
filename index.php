@@ -129,7 +129,7 @@
         <br/>
         <br/>
         <!--Programação-->
-        <div class="container-fluid bg-warning" id="agenda" style="text-align: center">
+        <div class="container-fluid" id="agenda" style="text-align: center; color: #fff; background: url('images/computer.png')">
             <br/>
             <br/>
             <br/>
@@ -254,11 +254,10 @@
         <br/>
         <br/>
         <!--Contatos-->
-        <div class="container-fluid bg-success" id="contato" style="text-align: center">
+        <div class="container-fluid" id="contato" style="background: url('images/New-York.png');text-align: center">
             <br/>
             <br/>
-            <br/>
-            <h1 class="display-4">Contato</h1>
+            <h1 class="display-4" style="color: #fff">Contato</h1>
             <br/>
             <br/>
             <div class="row justify-content-center">
@@ -279,7 +278,7 @@
             <br/>
         </div>
         <br/>
-        <!--<div class="container-fluid justify-content-center" style="text-align: center">
+<!--        <div class="container-fluid justify-content-center" style="text-align: center">
             <img class="img-responsive" src="images/logos.png" width="650" height="70"/>
         </div>-->
         <br/>
