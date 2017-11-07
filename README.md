@@ -1,2 +1,2 @@
 # unisites
-HomePage oficial da XVIª Semana Interdisciplinar de Tecnologia e Sociedade
+HomePage oficial da XVII Seminário Interdisciplinar de Tecnologia e Sociedade
