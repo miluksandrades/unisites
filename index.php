@@ -12,17 +12,23 @@
 
         <style>
             .icones{font-size: 100px;color: #004085}
+            
             a{color: #fff}
+            
             .icontacts{font-size: 60px;color: #fff;}
             .fa-facebook:hover{color: #3E67B6}
-            .fa-instagram:hover{background: -webkit-linear-gradient(70deg, #fdf497, #fd5949, #d6249f, #285AEB);
+            .fa-instagram:hover{background: -webkit-linear-gradient(45deg, #ffff14, #fd5949, #d6249f, #285AEB);
                                -webkit-background-clip: text;
                                -webkit-text-fill-color: transparent;}
             .fa-youtube-play:hover{color: #cc0000}
+            
             .logo{width: 250px;height: 250px;}
             @media(max-width: 600px){.logo{width: 200px;height: 200px;}}
+            
             .conteudo{margin-top: -100px}
             @media(max-width: 600px){.conteudo{margin-top: -150px}}
+            
+            /*media query icon isntagram*/
             .instagram{display: block;}
             .minstagram{display: none;}
             @media(max-width: 600px){.instagram{display: none;}.minstagram{display: block;}}
@@ -245,7 +251,7 @@
             <br/>
         </div>
         <br/>
-        <p class="lead" style="text-align: center">Copyright <b>&copy;</b> 2017 Engenharia de Computação. Todos os Direitos Reservados</p>
+        <p class="lead" style="text-align: center"><b>Copyright &copy; 2017 Engenharia de Computação. Todos os Direitos Reservados</b></p>
 
         <!--Modal's-->
 
