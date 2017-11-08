@@ -9,75 +9,30 @@
         <link href="css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css"/>
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
         <link href="css/grayscale.min.css" rel="stylesheet" type="text/css"/>
+
         <style>
-            .icones{
-                font-size: 100px;
-                color: #004085
-            }
-
-            a{
-                color: #fff
-            }
-            .icontacts{
-                font-size: 60px;
-                color: #fff;
-            }
-
-            .fa-facebook:hover{
-                color: #3E67B6
-            }
-            .fa-instagram:hover{
-                color: #b7337f
-            }
-            .fa-youtube-play:hover{
-                color: #cc0000
-            }
-
-            .logo{
-                width: 250px;
-                height: 250px;
-            }
-
-            @media(max-width: 600px){
-                .logo{
-                    width: 200px;
-                    height: 200px;
-                }
-            }
-
-            .conteudo{
-                margin-top: -100px
-            }
-
-            @media(max-width: 600px){
-                .conteudo{
-                    margin-top: -150px
-                }
-            }
-
-            .instagram{
-                display: block;
-            }
-
-            .minstagram{
-                display: none;
-            }
-
-            @media(max-width: 600px){
-                .instagram{
-                    display: none;
-                }
-
-                .minstagram{
-                    display: block;
-                }
-            }
+            .icones{font-size: 100px;color: #004085}
+            a{color: #fff}
+            .icontacts{font-size: 60px;color: #fff;}
+            .fa-facebook:hover{color: #3E67B6}
+            .fa-instagram:hover{background: -webkit-linear-gradient(70deg, #fdf497, #fd5949, #d6249f, #285AEB);
+                               -webkit-background-clip: text;
+                               -webkit-text-fill-color: transparent;}
+            .fa-youtube-play:hover{color: #cc0000}
+            .logo{width: 250px;height: 250px;}
+            @media(max-width: 600px){.logo{width: 200px;height: 200px;}}
+            .conteudo{margin-top: -100px}
+            @media(max-width: 600px){.conteudo{margin-top: -150px}}
+            .instagram{display: block;}
+            .minstagram{display: none;}
+            @media(max-width: 600px){.instagram{display: none;}.minstagram{display: block;}}
         </style>
     </head>
     <body>
+        <!--Barra de Navagação-->
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-faded">
             <a class="navbar-brand" id="botao-teste" href="#entrada">
-                <img class="img-responsive" src="images/logo-branca.png"margin-left: style="margin-left:30px;" width="90" height="25"/>                
+                <img class="img-responsive" src="images/logo-branca.png"margin-left: style="margin-left:30px;" width="85" height="25"/>                
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -100,7 +55,7 @@
                         <a class="nav-link" href="#contato">Contato</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Robocode</a>
+                        <a href="pages/robocode.php" style="margin-top: -3px" class="nav-link"><button class="btn btn-sm btn-info">Inscrição Robocode</button></a>
                     </li>
                 </ul>
 
@@ -134,22 +89,22 @@
                 <div class="col-12 col-sm-3 col-xl-2">
                     <a href="#" data-toggle="modal" data-target="#modal-banner"><i class="fa fa-file-text-o icones"></i></a>
                     <h4><i>Banners</i></h4>
-<!--                    <p class="lead">Apresentação de <i>Banners</i> - 2º período</p>-->
+                    <p class="lead">Apresentação de <i>Banners</i> - 2º período</p>
                 </div>
                 <div class="col-12 col-sm-3 col-xl-2">
                     <a href="#" data-toggle="modal" data-target="#modal-paper"><i class="fa fa-file-o icones"></i></a>
                     <h4><i>Papers</i></h4>
-<!--                    <p class="lead">Apresentação de <i>Papers</i> - 4º Período</p>-->
+                    <p class="lead">Apresentação de <i>Papers</i> - 4º período</p>
                 </div>
                 <div class="col-12 col-sm-3 col-xl-2">
                     <a href="#" data-toggle="modal" data-target="#modal-mini"><i class="fa fa-book icones"></i></a>
                     <h4>Minicursos</h4>
-<!--                    <p class="lead">Minicursos - 5º Período</p>-->
+                    <p class="lead">Minicursos - 5º período</p>
                 </div>
                 <div class="col-12 col-sm-3 col-xl-2">
                     <a href="#" data-toggle="modal" data-target="#modal-work"><i class="fa fa-television icones"></i></a>
                     <h4><i>Workshops</i></h4>
-<!--                    <p class="lead">Workshop de projetos - 7º Período</p>-->
+                    <p class="lead">Workshop de projetos - 7º período</p>
                 </div>
             </div>
             <br/>
@@ -160,17 +115,17 @@
                 <div class="col-12 col-sm-3 col-xl-2">
                     <a href="#" data-toggle="modal" data-target="#modal-jogo"><i class="fa fa-trophy icones"></i></a>
                     <h4>Jogo da Hora</h4>
-<!--                    <p class="lead">Votação do melhor projeto do SITES</p>-->
+                    <p class="lead">Votação do melhor projeto do SITES</p>
                 </div>
                 <div class="col-12 col-sm-3 col-xl-2">
                     <a href="#" data-toggle="modal" data-target="#modal-feira"><i class="fa fa-lightbulb-o icones"></i></a>
                     <h4>Feira de Idéias</h4>
-<!--                    <p class="lead">Apresentação de Projetos - 6º período</p>-->
+                    <p class="lead">Apresentação de Ideias - 6º período</p>
                 </div>
                 <div class="col-12 col-sm-3 col-xl-2">
                     <a href="#" data-toggle="modal" data-target="#modal-robo"><i class="fa fa-code icones"></i></a>
                     <h4><i>Robocodes</i></h4>
-<!--                    <p class="lead">Maratona programação do Curso de Engenharia de Computação</p>-->
+                    <p class="lead">Maratona programação do Curso de Engenharia de Computação</p>
                 </div>
             </div>
 
@@ -193,13 +148,13 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="images/fundo-slide.png" alt="First slide">
+                        <img class="d-block w-100" src="images/programacao/1.png" alt="Dia 4/12">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="images/fundo-slide1.png" alt="Second slide">
+                        <img class="d-block w-100" src="images/programacao/2.png" alt="Dia 5/12">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="images/fundo-slide.png" alt="Third slide">
+                        <img class="d-block w-100" src="images/programacao/3.png" alt="Dia 6/12">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselprogramacao" role="button" data-slide="prev">
@@ -213,19 +168,35 @@
             </div>
             <br/>
         </div>
-        <br/>
-        <br/>
-        <br/>
         <!--Equipe-->
         <div class="container-fluid" id="equipe" style="text-align: center">
             <br/>
             <br/>
             <br/>
-            <h1 class="display-4">Equipe</h1>
+            <h1 class="display-4">Organização</h1>
             <br/>
+            <p class="lead" style="font-size: 30px">Realização:</p>
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-4 col-xl-3">
+                    <img class="img-responsive" src="images/organizacao/bacharel.png" width="170" height="120"/>
+                </div>
+                <div class="col-12 col-sm-4 col-xl-3">
+                    <img class="img-responsive" src="images/organizacao/ftt.png" width="300" height="90"/>
+                </div>
+                <div class="col-12 col-sm-4 col-xl-3">
+                    <img class="img-responsive" src="images/organizacao/unievangelica.png" width="180" height="140"/>
+                </div>
+            </div>
             <br/>
-            <p class="lead">Equipe organizadora</p>
-            <p class="lead">Patrocinadores</p>
+            <p class="lead" style="font-size: 30px">Patrocinadores:</p>
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-4 col-xl-3">
+                    <img class="img-responsive" src="images/organizacao/telgo-light.png" width="200" height="90"/>
+                </div>
+                <div class="col-12 col-sm-4 col-xl-3">
+                    <img class="img-responsive" src="images/organizacao/teuto.png" width="200" height="80"/>
+                </div>
+            </div>
         </div>
         <br/>
         <br/>
@@ -237,8 +208,8 @@
             <h1 class="display-4" style="color: #fff">Contato</h1>
             <br/>
             <div class="row justify-content-center">
-                <div class="col-12 col-sm-5 col-xl-3"
-                     <form style="text-align: justify; color: #fff">
+                <div class="col-12 col-sm-4 col-xl-4">
+                    <form style="text-align: justify; color: #fff">
                         <p class="lead">Cadastre-se para receber novidades!</p>
                         <div class="form-group">
                             <label for="nome">Nome</label>
@@ -248,25 +219,27 @@
                             <label for="email">E-mail</label>
                             <input type="email" class="form-control" id="email" placeholder="E-mail">
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
                     </form>
                 </div>
                 <div class="col-4 col-sm-2 col-xl-1 icontacts">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="https://fb.com/sitesunievangelica" target="blank"><i class="fa fa-facebook"></i></a>
+                    <p class="lead">Facebook</p>
                 </div>
                 <div class="col-4 col-sm-2 col-xl-1 icontacts instagram">
                     <a href="http://instagram.com/sitesunievangelica" target="blank"><i class="fa fa-instagram"></i></a>
+                    <p class="lead">Instagram</p>
                 </div>
                 <div class="col-4 col-sm-2 col-xl-1 icontacts minstagram">
                     <a href="instagram://user?username=sitesunievangelica" target="blank"><i class="fa fa-instagram"></i></a>
+                    <p class="lead">Instagram</p>
                 </div>
-                <div class="col-4 col-sm-2 col-xl-1 icontacts">
+                <div class="col-4 col-sm-3 col-xl-1 icontacts">
                     <a href="#"><i class="fa fa-youtube-play"></i></a>
+                    <p class="lead">Youtube</p>
                 </div>
             </div>
-            <br/>
-            <br/>
-            <p class="lead" style="color: #fff"><b>#SitesUnievangelica</b></p>
+            <p class="lead" style="color: #fff; font-size: 30px"><b>#SitesUnievangelica</b></p>
             <br/>
             <br/>
             <br/>
