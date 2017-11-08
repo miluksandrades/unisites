@@ -29,8 +29,8 @@
             .fa-instagram:hover{
                 color: #b7337f
             }
-            .fa-twitter:hover{
-                color: #007bff
+            .fa-youtube-play:hover{
+                color: #cc0000
             }
 
             .logo{
@@ -77,7 +77,7 @@
     <body>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-faded">
             <a class="navbar-brand" id="botao-teste" href="#entrada">
-                <img class="img-responsive" src="images/logo-branca.png"margin-left: style="margin-left:30px;" width="95" height="25"/>                
+                <img class="img-responsive" src="images/logo-branca.png"margin-left: style="margin-left:30px;" width="90" height="25"/>                
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -98,6 +98,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Robocode</a>
                     </li>
                 </ul>
 
@@ -228,13 +231,26 @@
         <br/>
         <br/>
         <!--Contatos-->
-        <div class="container-fluid" id="contato" style="background: url('images/New-York.png');text-align: center">
+        <div class="container-fluid" id="contato" style="background: url('images/office-real.png');text-align: center">
             <br/>
             <br/>
             <h1 class="display-4" style="color: #fff">Contato</h1>
             <br/>
-            <br/>
             <div class="row justify-content-center">
+                <div class="col-12 col-sm-5 col-xl-3"
+                     <form style="text-align: justify; color: #fff">
+                        <p class="lead">Cadastre-se para receber novidades!</p>
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Nome">                        
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" class="form-control" id="email" placeholder="E-mail">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
                 <div class="col-4 col-sm-2 col-xl-1 icontacts">
                     <a href="#"><i class="fa fa-facebook"></i></a>
                 </div>
@@ -245,9 +261,10 @@
                     <a href="instagram://user?username=sitesunievangelica" target="blank"><i class="fa fa-instagram"></i></a>
                 </div>
                 <div class="col-4 col-sm-2 col-xl-1 icontacts">
-                    <i class="fa fa-twitter"></i>
+                    <a href="#"><i class="fa fa-youtube-play"></i></a>
                 </div>
             </div>
+            <br/>
             <br/>
             <p class="lead" style="color: #fff"><b>#SitesUnievangelica</b></p>
             <br/>
