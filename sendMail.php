@@ -25,7 +25,7 @@
         //$mail->AddReplyTo('recrutadorsysrecruit@gmail.com', $nome);;
         $mail->Subject = 'CONFIRMAÇÂO SITES';
         //Define o detinatário
-        $mail->AddAddress('$email', 'SITES');
+        $mail->AddAddress($email, 'SITES');
         $mail->MsgHTML('Nome: '.$nome.'<br/><br/>'.'E-Mail: '.$email.'<br/>');
         $mail->Send();
         echo "Enviado com sucesso";
