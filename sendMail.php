@@ -4,7 +4,7 @@
 
     if(!isset($_POST["email"]) || !isset($_POST["nome"]){
         echo "Dados invalidados";
-        header( "refresh:5; url=index.php" );
+        //header( "refresh:5; url=index.php" );
     }
 
     $nome = $_POST["nome"];
@@ -29,8 +29,8 @@
         $mail->MsgHTML('Nome: '.$nome.'<br/><br/>'.'E-Mail: '.$email.'<br/>');
         $mail->Send();
         echo "Enviado com sucesso";
-        header( "refresh:5; url=index.php" );
+        //header( "refresh:5; url=index.php" );
     } catch(phpmailerException $e){
         echo $e->errorMessage();
-        header( "refresh:5; url=index.php" );
+        //header( "refresh:5; url=index.php" );
     }
