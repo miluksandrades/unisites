@@ -164,20 +164,79 @@
             <h1 class="display-4">Programação</h1>
             <br/>
             <div id="carouselprogramacao" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselprogramacao" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselprogramacao" data-slide-to="1"></li>
-                    <li data-target="#carouselprogramacao" data-slide-to="2"></li>
-                </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="images/programacao/1.png" alt="Dia 4/12">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-sm-3 col-xl-3 bg-success">
+                                <p class="lead">19:00 hs</p>
+                                <p class="lead">Momento Cultural</p>
+                            </div>
+                            <div class="col-12 col-sm-3 col-xl-3 bg-primary">
+                                <p class="lead">19:20 hs</p>
+                                <p class="lead">Cerimonial de Abertura do Seminário</p>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-sm-3 col-xl-3 bg-success">
+                                <p class="lead">20:00 hs</p>
+                                <p class="lead">Mesa-redonda</p>
+                            </div>
+                            <div class="col-12 col-sm-3 col-xl-3 bg-primary">
+                                <p class="lead">22:00 hs</p>
+                                <p class="lead">Agradecimentos finais</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="images/programacao/2.png" alt="Dia 5/12">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-sm-3 col-xl-3 bg-success">
+                                <p class="lead">19:00</p>
+                                <p class="lead">Momento Cultural</p>
+                            </div>
+                            <div class="col-12 col-sm-3 col-xl-3 bg-primary">
+                                <p class="lead">19:20</p>
+                                <p class="lead">Abertura da Feira de Ideias e Workshop</p>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-sm-3 col-xl-3 bg-success">
+                                <p class="lead">20:50</p>
+                                <p class="lead">Banners, Papers, minicursos EAD</p>
+                            </div>
+                            <div class="col-12 col-sm-3 col-xl-3 bg-primary">
+                                <p class="lead">22:15</p>
+                                <p class="lead">Mesa Redonda</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="images/programacao/3.png" alt="Dia 6/12">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-sm-3 col-xl-3 bg-success">
+                                <p class="lead">19:00</p>
+                                <p class="lead">Momento Cultural</p>
+                            </div>
+                            <div class="col-12 col-sm-3 col-xl-3 bg-primary">
+                                <p class="lead">19:00</p>
+                                <p class="lead">Torneio Robocode</p>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-sm-3 col-xl-3 bg-success">
+                                <p class="lead">19:00</p>
+                                <p class="lead">Workshop de desenvolvimento</p>
+                            </div>
+                            <div class="col-12 col-sm-3 col-xl-3 bg-primary">
+                                <p class="lead">19:00</p>
+                                <p class="lead">Minicursos</p>
+                            </div>
+                            <div class="col-12 col-sm-3 col-xl-3 bg-info">
+                                <p class="lead">22:00</p>
+                                <p class="lead">Agradecimentos finais</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselprogramacao" role="button" data-slide="prev">
@@ -188,6 +247,9 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
+                <br/>
+                <br/>
+                <br/>
             </div>
             <br/>
         </div>
