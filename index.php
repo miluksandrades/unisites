@@ -10,6 +10,7 @@
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
         <link href="css/grayscale.min.css" rel="stylesheet" type="text/css"/>
         <link href="css/icofont.css" rel="stylesheet" type="text/css"/>
+        <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase.js"></script>
 
         <style>
             .icones{font-size: 100px;color: #004085}
@@ -33,6 +34,21 @@
             .instagram{display: block;}
             .minstagram{display: none;}
             @media(max-width: 600px){.instagram{display: none;}.minstagram{display: block;}}
+
+            .minicursos{
+                font-size: 70px;
+            }
+            .icofont-file-excel{color: #28a745}
+            .icofont-file-word{color: #004085}
+            .icofont-camera{color: #004085}
+            .icofont-tools-alt-2{color: #d39e00}
+            .icofont-social-opencart{color: #cc0000}
+            .icofont-file-image{color: #004085}
+            .icofont-ui-cart{color: #00638c}
+
+            .confirmacao{
+                display: none;
+            }
         </style>
     </head>
     <body>
@@ -216,17 +232,18 @@
             <br/>
             <div class="row justify-content-center">
                 <div class="col-12 col-sm-4 col-xl-4">
-                    <form style="text-align: justify; color: #fff">
+                    <form id="newsletter" style="text-align: justify; color: #fff">
                         <p class="lead">Cadastre-se para receber novidades!</p>
                         <div class="form-group">
                             <label for="nome">Nome</label>
-                            <input type="text" class="form-control" id="nome" placeholder="Nome">                        
+                            <input type="text" class="form-control" id="nome" placeholder="Nome" required>                        
                         </div>
                         <div class="form-group">
                             <label for="email">E-mail</label>
-                            <input type="email" class="form-control" id="email" placeholder="E-mail">
+                            <input type="email" class="form-control" id="email" placeholder="E-mail" required>
                         </div>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        <p class="lead col-12 bg-success white-text confirmacao" style="text-align: center; border-radius: 5px;">Enviado com sucesso!!!</p>
+                        <button type="submit" class="btn col-12 btn-primary">Enviar</button>
                     </form>
                 </div>
                 <div class="col-4 col-sm-2 col-xl-1 icontacts">
@@ -272,23 +289,44 @@
                                 <i class="fa fa-android icones"></i>
                             </div>                            
                         </div>
+                        <br/>
+                        <p class="lead" style="text-align: justify">Cadastre a equipe no formulário abaixo para participar da competição.</p>
+                        <br/>
+                        <p class="lead"><b style="color: red">*</b> Campos obrigatórios</p>
                         <div class="container">
-                            <div class="row">
-                                <form>
-                                    <div class="form-group col-md-6">
-                                        <label class="control-label">Nome Completo</label>
-                                        <input class="form-control" type="text" placeholder="Nome"/>
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <label class="control-label">Email</label>
-                                        <input class="form-control" type="text" placeholder="Nome"/>
-                                    </div>
-                                </form>
-                            </div>
+                            <form id="formRobocode">
+                                <div class="form-group col-12">
+                                    <label class="control-label">Nome da Equipe<b style="color: red">*</b>:</label>
+                                    <input class="form-control" type="text" id="groupname" placeholder="Nome"/>
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="control-label">Membro 1<b style="color: red">*</b>:</label>
+                                    <input class="form-control" type="text" id="member1" placeholder="Membro 1" required/>
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="control-label">Membro 2 (opcional):</label>
+                                    <input class="form-control" type="text" id="member2" placeholder="Membro 2"/>
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="control-label">Membro 3 (opcional):</label>
+                                    <input class="form-control" type="text" id="member3" placeholder="Membro 3"/>
+                                </div>
+                                <div class="form-group col-10">
+                                    <label class="control-label">Email para contato<b style="color: red">*</b>:</label>
+                                    <input class="form-control" type="email" id="emailEquipe" placeholder="E-mail"/>
+                                </div>
+                                <div class="form-check col-12">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        Aceito os termos do <a href="" target="blank" style="color: #285AEB">Edital</a>
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn col-12 btn-primary">Enviar</button>
+                            </form>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                     </div>
                 </div>
             </div>
@@ -311,7 +349,7 @@
                             </div>
                             <div class="col-12 col-sm-6 col-xl-6">
                                 <p class="lead">Apresentação de Banners dos projetos do 3º Período</p>
-                            </div>                            
+                            </div>                           
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -350,7 +388,7 @@
 
         <!--Modal minicursos-->
         <div class="modal fade" id="modal-mini" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Minicursos</h5>
@@ -367,43 +405,44 @@
                                 <p class="lead">Minicursos ministrados pelos alunos do 5º Período</p>
                             </div>                            
                         </div>
-                        <p class="lead" style="text-align: center"><b>Minicursos EAD</b></p>
+                        <br/>
+                        <p class="lead" style="text-align: center"><b>Minicursos EAD<br/>Clique no ícone do curso para se inscrever</b></p>
                         <br/>
                         <div class="row justify-content-center" style="text-align: center">
-                            <div class="col-12 col-sm-4 col-xl-4">
-                                <i class="icofont icofont-file-excel icones"></i>
-                                <p class="lead">Excel</p>
+                            <div class="col-12 col-sm-4 col-xl-3">
+                                <i class="icofont icofont-file-excel minicursos"></i>
+                                <p class="lead"><b>Excel</b></p>
                             </div>
-                            <div class="col-12 col-sm-4 col-xl-4">
-                                <i class="icofont icofont-file-word icones"></i>
-                                <p class="lead">Word</p>
+                            <div class="col-12 col-sm-4 col-xl-3">
+                                <i class="icofont icofont-file-word minicursos"></i>
+                                <p class="lead"><b>Word</b></p>
                             </div>
-                            <div class="col-12 col-sm-4 col-xl-4">
-                                <i class="icofont icofont-tools-alt-2 icones"></i>
-                                <p class="lead">Manutenção de Computadores</p>
+                            <div class="col-12 col-sm-4 col-xl-3">
+                                <i class="icofont icofont-tools-alt-2 minicursos"></i>
+                                <p class="lead"><b>Manutenção de Computadores</b></p>
                             </div>
                         </div>
                         <br/>
                         <div class="row justify-content-center" style="text-align: center">
                             <div class="col-12 col-sm-3 col-xl-3">
-                                <i class="icofont icofont-ui-cart icones"></i>
-                                <p class="lead">E-commerce</p>
+                                <i class="icofont icofont-ui-cart minicursos"></i>
+                                <p class="lead"><b>E-commerce</b></p>
                             </div>
                             <div class="col-12 col-sm-3 col-xl-3">
-                                <i class="icofont icofont-file-image icones"></i>
-                                <p class="lead">Edição de Imagens - Filmora</p>
+                                <i class="icofont icofont-file-image minicursos"></i>
+                                <p class="lead"><b>Edição de Imagens - Filmora</b></p>
                             </div>
                             <div class="col-12 col-sm-3 col-xl-3">
-                                <i class="icofont icofont-social-opencart icones"></i>
-                                <p class="lead">Marketing Digital</p>
+                                <i class="icofont icofont-social-opencart minicursos"></i>
+                                <p class="lead"><b>Marketing Digital</b></p>
                             </div>
                             <div class="col-12 col-sm-3 col-xl-3">
-                                <i class="icofont icofont-camera icones"></i>
-                                <p class="lead">Photoshop</p>
+                                <i class="icofont icofont-camera minicursos"></i>
+                                <p class="lead"><b>Photoshop</b></p>
                             </div>
                         </div>
                         <br/>
-                        <p class="lead">OBS: As Inscrições estarão abertas até dia 26/11/2017</p>
+                        <p class="lead">OBS: <b style="color: red">As Inscrições estarão abertas até dia 26/11/2017</b></p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
@@ -582,6 +621,9 @@
             });
         </script>
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="controller/app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase.js"></script>
+        <script src="controller/robocode/robocode.js"></script>        
     </body>
 </html>
 
