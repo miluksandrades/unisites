@@ -19,8 +19,8 @@
         $mail->SMTPSecure = 'tls';
         $mail->SMTPDebug = 1;
         $mail->Port = 587;//Porta de conexão SMTP
-        $mail->Username = 'unievangelicasites@gmail.com';//Usario do seervidor
-        $mail->Password = 'Adm*5509';
+        $mail->Username = 'lucas.tecnico.dev@gmail.com';//Usario do seervidor
+        $mail->Password = 'q1w2e3r4t5y';
         //Define o remetente
         $mail->SetFrom('unievangelicasites@gmail.com', 'SITES');
         //$mail->AddReplyTo('recrutadorsysrecruit@gmail.com', $nome);;
