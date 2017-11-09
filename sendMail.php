@@ -23,7 +23,7 @@
         $mail->Username = 'recrutadorsysrecruit@gmail.com';//Usario do seervidor
         $mail->Password = 'Adm*5509';
         //Define o remetente
-        $mail->SetFrom('unievangelicasites@gmail.com', 'SITES');
+        $mail->SetFrom('recrutadorsysrecruit@gmail.com', 'SITES');
         //$mail->AddReplyTo('recrutadorsysrecruit@gmail.com', $nome);;
         $mail->Subject = 'CONFIRMAÇÂO SITES';
         //Define o detinatário
