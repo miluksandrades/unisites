@@ -13,7 +13,7 @@ firebase.initializeApp(config);
 var dadosAlunos = firebase.database().ref('Alunos');
 
 //Listen for form submit
-document.getElementById('newsletter').addEventListener('submit', enviarDados);
+//document.getElementById('newsletter').addEventListener('submit', enviarDados);
 
 //Submit form
 function enviarDados(e){
