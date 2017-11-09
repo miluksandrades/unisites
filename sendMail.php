@@ -1,6 +1,6 @@
 <?php
 
-    require("phpmailer/class.phpmailer.php");
+    require("class.phpmailer.php");
 
     if(!isset($_POST["email"]) || !isset($_POST["nome"]){
         echo "Dados invalidados";
