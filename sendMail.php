@@ -5,6 +5,7 @@
     if(!isset($_POST["email"]) || !isset($_POST["nome"])){
         echo "Dados invalidados";
         header( "refresh:5; url=index.php" );
+        die();
     }
 
     $nome = $_POST["nome"];
@@ -15,10 +16,10 @@
     try{
         $mail->Host = 'smtp.gmail.com';//Servidor SMTP
         $mail->SMTPAuth = true;//Usa a autenticação SMTP
-        $mail->SMTPSecure = 'ssl';
+        $mail->SMTPSecure = 'tls';
         $mail->SMTPDebug = 1;
         $mail->Port = 587;//Porta de conexão SMTP
-        $mail->Username = 'recrutadorsysrecruit@gmail.com';//Usario do seervidor
+        $mail->Username = 'unievangelicasites@gmail.com';//Usario do seervidor
         $mail->Password = 'Adm*5509';
         //Define o remetente
         $mail->SetFrom('unievangelicasites@gmail.com', 'SITES');
