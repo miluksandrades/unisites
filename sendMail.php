@@ -32,5 +32,5 @@
         header( "refresh:5; url=index.php" );
     } catch(phpmailerException $e){
         echo $e->errorMessage();
-        header( "refresh:5; url=index.php" );
+        //header( "refresh:5; url=index.php" );
     }
