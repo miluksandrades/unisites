@@ -17,7 +17,7 @@
         $mail->SMTPAuth = true;//Usa a autenticação SMTP
         $mail->SMTPSecure = 'ssl';
         $mail->SMTPDebug = 1;
-        $mail->Port = 465;//Porta de conexão SMTP
+        $mail->Port = 587;//Porta de conexão SMTP
         $mail->Username = 'recrutadorsysrecruit@gmail.com';//Usario do seervidor
         $mail->Password = 'Adm*5509';
         //Define o remetente
