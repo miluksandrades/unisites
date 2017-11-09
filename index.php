@@ -9,25 +9,26 @@
         <link href="css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css"/>
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
         <link href="css/grayscale.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/icofont.css" rel="stylesheet" type="text/css"/>
 
         <style>
             .icones{font-size: 100px;color: #004085}
-            
+
             a{color: #fff}
-            
+
             .icontacts{font-size: 60px;color: #fff;}
             .fa-facebook:hover{color: #3E67B6}
             .fa-instagram:hover{background: -webkit-linear-gradient(45deg, #ffff14, #fd5949, #d6249f, #285AEB);
-                               -webkit-background-clip: text;
-                               -webkit-text-fill-color: transparent;}
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;}
             .fa-youtube-play:hover{color: #cc0000}
-            
+
             .logo{width: 250px;height: 250px;}
             @media(max-width: 600px){.logo{width: 200px;height: 200px;}}
-            
+
             .conteudo{margin-top: -100px}
             @media(max-width: 600px){.conteudo{margin-top: -150px}}
-            
+
             /*media query icon isntagram*/
             .instagram{display: block;}
             .minstagram{display: none;}
@@ -61,7 +62,7 @@
                         <a class="nav-link" href="#contato">Contato</a>
                     </li>
                     <li class="nav-item">
-                        <a href="pages/robocode.php" style="margin-top: -3px" class="nav-link"><button class="btn btn-sm btn-info">Inscrição Robocode</button></a>
+                        <a href="#" data-toggle="modal" data-target="#modal-robocode" style="margin-top: -3px" class="nav-link"><button class="btn btn-sm btn-primary">Inscrição Robocode</button></a>
                     </li>
                 </ul>
 
@@ -240,7 +241,7 @@
                     <a href="instagram://user?username=sitesunievangelica" target="blank"><i class="fa fa-instagram"></i></a>
                     <p class="lead">Instagram</p>
                 </div>
-                <div class="col-4 col-sm-3 col-xl-1 icontacts">
+                <div class="col-4 col-sm-2 col-xl-1 icontacts">
                     <a href="#"><i class="fa fa-youtube-play"></i></a>
                     <p class="lead">Youtube</p>
                 </div>
@@ -254,6 +255,44 @@
         <p class="lead" style="text-align: center"><b>Copyright &copy; 2017 Engenharia de Computação. Todos os Direitos Reservados</b></p>
 
         <!--Modal's-->
+
+        <!--Modal inscrição-->
+        <div class="modal fade" id="modal-robocode" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Robocode</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><i class="fa fa-times"></i></span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-sm-3 col-xl-3" style="text-align: center">
+                                <i class="fa fa-android icones"></i>
+                            </div>                            
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <form>
+                                    <div class="form-group col-md-6">
+                                        <label class="control-label">Nome Completo</label>
+                                        <input class="form-control" type="text" placeholder="Nome"/>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label class="control-label">Email</label>
+                                        <input class="form-control" type="text" placeholder="Nome"/>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!--Modal Banner-->
         <div class="modal fade" id="modal-banner" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -328,6 +367,43 @@
                                 <p class="lead">Minicursos ministrados pelos alunos do 5º Período</p>
                             </div>                            
                         </div>
+                        <p class="lead" style="text-align: center"><b>Minicursos EAD</b></p>
+                        <br/>
+                        <div class="row justify-content-center" style="text-align: center">
+                            <div class="col-12 col-sm-4 col-xl-4">
+                                <i class="icofont icofont-file-excel icones"></i>
+                                <p class="lead">Excel</p>
+                            </div>
+                            <div class="col-12 col-sm-4 col-xl-4">
+                                <i class="icofont icofont-file-word icones"></i>
+                                <p class="lead">Word</p>
+                            </div>
+                            <div class="col-12 col-sm-4 col-xl-4">
+                                <i class="icofont icofont-tools-alt-2 icones"></i>
+                                <p class="lead">Manutenção de Computadores</p>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="row justify-content-center" style="text-align: center">
+                            <div class="col-12 col-sm-3 col-xl-3">
+                                <i class="icofont icofont-ui-cart icones"></i>
+                                <p class="lead">E-commerce</p>
+                            </div>
+                            <div class="col-12 col-sm-3 col-xl-3">
+                                <i class="icofont icofont-file-image icones"></i>
+                                <p class="lead">Edição de Imagens - Filmora</p>
+                            </div>
+                            <div class="col-12 col-sm-3 col-xl-3">
+                                <i class="icofont icofont-social-opencart icones"></i>
+                                <p class="lead">Marketing Digital</p>
+                            </div>
+                            <div class="col-12 col-sm-3 col-xl-3">
+                                <i class="icofont icofont-camera icones"></i>
+                                <p class="lead">Photoshop</p>
+                            </div>
+                        </div>
+                        <br/>
+                        <p class="lead">OBS: As Inscrições estarão abertas até dia 26/11/2017</p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
