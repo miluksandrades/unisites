@@ -2,15 +2,15 @@
 
     //require("class.phpmailer.php");
 
-    /*if(!isset($_POST["email"]) || !isset($_POST["nome"]){
+    if(!isset($_POST["email"]) || !isset($_POST["nome"])){
         echo "Dados invalidados";
         //header( "refresh:5; url=index.php" );
     }
 
     $nome = $_POST["nome"];
-    $email = $_POST["email"];*/
+    $email = $_POST["email"];
        
-    /*$mail = new PHPMailer(true);
+    $mail = new PHPMailer(true);
     $mail->IsSMTP();
     try{
         $mail->Host = 'smtp.gmail.com';//Servidor SMTP
@@ -33,4 +33,4 @@
     } catch(phpmailerException $e){
         echo $e->errorMessage();
         //header( "refresh:5; url=index.php" );
-    }*/
+    }
