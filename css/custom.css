@@ -1,0 +1,36 @@
+.icones{font-size: 100px;color: #004085}
+
+a{color: #fff}
+
+.icontacts{font-size: 60px;color: #fff;}
+.fa-facebook:hover{color: #3E67B6}
+.fa-instagram:hover{background: -webkit-linear-gradient(45deg, #ffff14, #fd5949, #d6249f, #285AEB);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;}
+.fa-youtube-play:hover{color: #cc0000}
+
+.logo{width: 250px;height: 250px;}
+@media(max-width: 600px){.logo{width: 200px;height: 200px;}}
+
+.conteudo{margin-top: -100px}
+@media(max-width: 600px){.conteudo{margin-top: -150px}}
+
+/*media query icon isntagram*/
+.instagram{display: block;}
+.minstagram{display: none;}
+@media(max-width: 600px){.instagram{display: none;}.minstagram{display: block;}}
+
+.minicursos{
+    font-size: 70px;
+}
+.icofont-file-excel{color: #28a745}
+.icofont-file-word{color: #004085}
+.icofont-camera{color: #004085}
+.icofont-tools-alt-2{color: #d39e00}
+.icofont-social-opencart{color: #cc0000}
+.icofont-file-image{color: #004085}
+.icofont-ui-cart{color: #00638c}
+
+.confirmacao{
+    display: none;
+}
