@@ -11,45 +11,8 @@
         <link href="css/grayscale.min.css" rel="stylesheet" type="text/css"/>
         <link href="css/icofont.css" rel="stylesheet" type="text/css"/>
         <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase.js"></script>
-
-        <style>
-            .icones{font-size: 100px;color: #004085}
-
-            a{color: #fff}
-
-            .icontacts{font-size: 60px;color: #fff;}
-            .fa-facebook:hover{color: #3E67B6}
-            .fa-instagram:hover{background: -webkit-linear-gradient(45deg, #ffff14, #fd5949, #d6249f, #285AEB);
-                                -webkit-background-clip: text;
-                                -webkit-text-fill-color: transparent;}
-            .fa-youtube-play:hover{color: #cc0000}
-
-            .logo{width: 250px;height: 250px;}
-            @media(max-width: 600px){.logo{width: 200px;height: 200px;}}
-
-            .conteudo{margin-top: -100px}
-            @media(max-width: 600px){.conteudo{margin-top: -150px}}
-
-            /*media query icon isntagram*/
-            .instagram{display: block;}
-            .minstagram{display: none;}
-            @media(max-width: 600px){.instagram{display: none;}.minstagram{display: block;}}
-
-            .minicursos{
-                font-size: 70px;
-            }
-            .icofont-file-excel{color: #28a745}
-            .icofont-file-word{color: #004085}
-            .icofont-camera{color: #004085}
-            .icofont-tools-alt-2{color: #d39e00}
-            .icofont-social-opencart{color: #cc0000}
-            .icofont-file-image{color: #004085}
-            .icofont-ui-cart{color: #00638c}
-
-            .confirmacao{
-                display: none;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="css/custom.css">
+            
     </head>
     <body>
         <!--Barra de Navagação-->
@@ -147,8 +110,8 @@
                 </div>
                 <div class="col-12 col-sm-3 col-xl-2">
                     <a href="#" data-toggle="modal" data-target="#modal-robo"><i class="fa fa-code icones"></i></a>
-                    <h4><i>Robocodes</i></h4>
-                    <p class="lead">Maratona programação do Curso de Engenharia de Computação</p>
+                    <h4><i>Robocode</i></h4>
+                    <p class="lead">I Torneio Robocode do Curso de Engenharia de Computação</p>
                 </div>
             </div>
 
@@ -617,7 +580,7 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Robocodes</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Robocode</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -628,12 +591,12 @@
                                 <i class="fa fa-code icones"></i>
                             </div>
                             <div class="col-12 col-sm-7 col-xl-7">
-                                <p class="lead">I competição de programação do curso de Engenharia de Computação</p>
+                                <p class="lead">I Torneio Robocode do curso de Engenharia de Computação.</p>
                             </div>                            
                         </div>
                         <br/>
-                        <p class="lead"><a href="files/edital-robocode.pdf" target="_blank" style="color: red; text-decoration: none">Clique aqui</a> para visualizar o regulamento da competição.</p>
-                        <p class="lead">OBS.: Clique em inscrição robocode para cadastrar sua equipe.</p>
+                        <p><a href="robocode/edital-robocode.pdf" target="_blank" style="color: red; text-decoration: none">Clique aqui</a> para visualizar o regulamento da competição.</p>
+                        <p class="lead"> <a href="robocode" style="margin-top: -3px" class="nav-link"><button class="btn btn-sm btn-primary">P&aacute;gina do Torneio Robocode</button></a></p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
@@ -709,4 +672,3 @@
         <script src="controller/robocode/robocode.js"></script>        
     </body>
 </html>
-
