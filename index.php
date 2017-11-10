@@ -338,51 +338,64 @@
 
         <!--Modal inscrição-->
         <div class="modal fade" id="modal-robocode" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Robocode</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Inscri&ccedil;&otilde;es - I Torneio Robocode da UniEvang&eacute;lica</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true"><i class="fa fa-times"></i></span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <div class="row justify-content-center">
+                        <!--<div class="row justify-content-center">
                             <div class="col-12 col-sm-3 col-xl-3" style="text-align: center">
                                 <i class="fa fa-android icones"></i>
                             </div>                            
                         </div>
-                        <br/>
+                        <br/>-->
                         <p class="lead" style="text-align: justify">Cadastre a equipe no formulário abaixo para participar da competição.</p>
-                        <br/>
-                        <p class="lead"><b style="color: red">*</b> Campos obrigatórios</p>
+                        
+                        <p class="lead"><b style="color: red"> <small>* Todos os campos são obrigatórios</small></b></p>
                         <div class="container">
                             <form id="formRobocode">
                                 <div class="form-group col-12">
-                                    <label class="control-label">Nome da Equipe<b style="color: red">*</b>:</label>
-                                    <input class="form-control" type="text" id="groupname" placeholder="Nome"/>
+                                    <label class="control-label ">Nome da Equipe</label>
+                                    <input class="form-control" type="text" id="team" name="team" placeholder="Nome"required/>
                                 </div>
+                                 <hr>
                                 <div class="form-group col-12">
-                                    <label class="control-label">Membro 1<b style="color: red">*</b>:</label>
-                                    <input class="form-control" type="text" id="member1" placeholder="Membro 1" required/>
+                                    <label class="control-label">Membro 1</label>
                                 </div>
+                                <div class="form-inline col-12">
+                                        <label class="control-label col-md-1">Nome</label>
+                                        <input class="form-control col-md-11" type="text" id="name1" name="name1" placeholder="Nome Membro 1" required/>
+                                </div>
+                                <div class="form-inline col-12" style="margin-top: .5rem;">
+                                    <label class="col-md-1">Email</label>
+                                    <input class="form-control col-md-8" type="text" id="email1" name="email1" placeholder="E-mail Membro 1" required/>
+                                    <label class="col-md-2">Per&iacute;odo</label>
+                                    <input class="form-control col-md-1" type="number" id="period1" name="period1" placeholder="" required/>
+                                </div>
+                                <hr>
                                 <div class="form-group col-12">
-                                    <label class="control-label">Membro 2 (opcional):</label>
-                                    <input class="form-control" type="text" id="member2" placeholder="Membro 2"/>
+                                    <label class="control-label">Membro 2</label>
                                 </div>
-                                <div class="form-group col-12">
-                                    <label class="control-label">Membro 3 (opcional):</label>
-                                    <input class="form-control" type="text" id="member3" placeholder="Membro 3"/>
+                                <div class="form-inline col-12">
+                                        <label class="control-label col-md-1">Nome</label>
+                                        <input class="form-control col-md-11" type="text" id="name2" name="name2" placeholder="Nome Membro 2" required/>
                                 </div>
-                                <div class="form-group col-10">
-                                    <label class="control-label">Email para contato<b style="color: red">*</b>:</label>
-                                    <input class="form-control" type="email" id="emailEquipe" placeholder="E-mail"/>
+                                <div class="form-inline col-12" style="margin-top: .5rem; margin-bottom: 1rem;">
+                                    <label class="col-md-1">Email</label>
+                                    <input class="form-control col-md-8" type="text" id="email2" name="email2" placeholder="E-mail Membro 2" required/>
+                                    <label class="col-md-2">Per&iacute;odo</label>
+                                    <input class="form-control col-md-1" type="number" id="period2" name="period2" placeholder="" required/>
                                 </div>
                                 <div class="form-check col-12">
                                     <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input">
+                                        <input type="checkbox" id="checkedital" name="checkedital" class="form-check-input">
                                         Aceito os termos do <a href="" target="blank" style="color: #285AEB">Edital</a>
                                     </label>
+                                    <div id="erroredital" class="erroredital"></div>
                                 </div>
                                 <button type="submit" class="btn col-12 btn-primary">Enviar</button>
                             </form>
