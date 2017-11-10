@@ -555,11 +555,15 @@
                         <div class="row justify-content-center">
                             <div class="col-12 col-sm-3 col-xl-3"  style="text-align: center">
                                 <i class="fa fa-trophy icones"></i>
-                            </div>
-                            <div class="col-12 col-sm-6 col-xl-6">
-                                <p class="lead">Votação do projeto com mais contribuição para a sociedade</p>
-                            </div>                            
+                            </div>                                                        
                         </div>
+                        <br/>
+                        <p class="lead" style="text-align: justify"><b>O jogo Investidor “DA HORA” tem como objetivo envolver os alunos do curso
+                                de Engenharia de Computação nas atividades desenvolvidas nos Seminários
+                                Interdisciplinares de Tecnologia e Sociedade - SITES. É utilizada como estratégia
+                                motivacional cujo desígnio é fortalecer a percepção dos alunos quanto aos projetos que
+                                são desenvolvidos ao longo das disciplinas de Projeto Interdisciplinar.</b></p>
+                        <p class="lead"><b>Edital do Jogo da Hora: <a href="files/XVII_SITES_Edital_Jogo_Da_Hora.pdf" target="blank" style="color: red;text-decoration: none">Edital</a></b></p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
@@ -614,6 +618,9 @@
                                 <p class="lead">I competição de programação do curso de Engenharia de Computação</p>
                             </div>                            
                         </div>
+                        <br/>
+                        <p class="lead"><a href="files/edital-robocode.pdf" target="blank" style="color: red; text-decoration: none">Clique aqui</a> para visualizar o regulamento da competição.</p>
+                        <p class="lead">OBS.: Clique em inscrição robocode para cadastrar sua equipe.</p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
