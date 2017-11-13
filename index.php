@@ -126,9 +126,16 @@
             <br/>
             <h1 class="display-4">Programação</h1>
             <br/>
+            <br/>
             <div id="carouselprogramacao" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li class="active" data-target="#carouselprogramacao" data-slide-to="0"></li>
+                    <li class="" data-target="#carouselprogramacao" data-slide-to="1"></li>
+                    <li class="" data-target="#carouselprogramacao" data-slide-to="2"></li>
+                </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
+                        <p class="display-4">Dia 4/12</p>
                         <div class="row justify-content-center">
                             <div class="col-12 col-sm-3 col-xl-3 bg-success">
                                 <p class="lead">19:00 hs</p>
@@ -152,6 +159,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
+                        <p class="display-4">Dia 5/12</p>
                         <div class="row justify-content-center">
                             <div class="col-12 col-sm-3 col-xl-3 bg-success">
                                 <p class="lead">19:00</p>
@@ -175,6 +183,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
+                        <p class="display-4">Dia 6/12</p>
                         <div class="row justify-content-center">
                             <div class="col-12 col-sm-3 col-xl-3 bg-success">
                                 <p class="lead">19:00</p>
@@ -204,11 +213,11 @@
                 </div>
                 <a class="carousel-control-prev" href="#carouselprogramacao" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
+                    <span class="sr-only">Anterior</span>
                 </a>
                 <a class="carousel-control-next" href="#carouselprogramacao" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
+                    <span class="sr-only">Próximo</span>
                 </a>
                 <br/>
                 <br/>
