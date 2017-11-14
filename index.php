@@ -12,7 +12,7 @@
         <link href="css/icofont.css" rel="stylesheet" type="text/css"/>
         <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase.js"></script>
         <link rel="stylesheet" type="text/css" href="css/custom.css">
-            
+
     </head>
     <body>
         <!--Barra de Navagação-->
@@ -38,6 +38,9 @@
                         <a class="nav-link" href="#equipe">Equipe</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#container-newsletter">Newsletter</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#contato">Contato</a>
                     </li>
                     <li class="nav-item">
@@ -47,6 +50,7 @@
 
             </div>
         </nav>
+
         <!-- Cabeçalho -->
         <header class="masthead" id="entrada">
             <div class="intro-body">
@@ -63,6 +67,7 @@
                 </div>
             </div>
         </header>
+
         <!--Atividades-->
         <div class="container-fluid" id="atividades" style="text-align: center">
             <br/>
@@ -135,7 +140,7 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <p class="display-4">Dia 4/12</p>
+                        <p class="display-4">Dia 04/12</p>
                         <div class="row justify-content-center">
                             <div class="col-12 col-sm-3 col-xl-3 bg-success">
                                 <p class="lead">19:00 hs</p>
@@ -159,7 +164,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <p class="display-4">Dia 5/12</p>
+                        <p class="display-4">Dia 05/12</p>
                         <div class="row justify-content-center">
                             <div class="col-12 col-sm-3 col-xl-3 bg-success">
                                 <p class="lead">19:00</p>
@@ -183,7 +188,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <p class="display-4">Dia 6/12</p>
+                        <p class="display-4">Dia 06/12</p>
                         <div class="row justify-content-center">
                             <div class="col-12 col-sm-3 col-xl-3 bg-success">
                                 <p class="lead">19:00</p>
@@ -258,16 +263,16 @@
         <br/>
         <br/>
         <br/>
-        <!--Contatos-->
-        <div class="container-fluid" id="contato" style="background: url('images/office-real.png');text-align: center">
+        <!--Newsletter-->
+        <div class="container-fluid justify-content-center" id="container-newsletter" style="background: url('images/newspaper.png')">
             <br/>
             <br/>
-            <h1 class="display-4" style="color: #fff">Contato</h1>
+            <p class="display-4 text-white" style="text-align: center">Cadastre-se para receber novidades!</p>
+            <br/>
             <br/>
             <div class="row justify-content-center">
                 <div class="col-12 col-sm-4 col-xl-4">
                     <form id="newsletter" style="text-align: justify; color: #fff">
-                        <p class="lead">Cadastre-se para receber novidades!</p>
                         <div class="form-group">
                             <label for="nome">Nome</label>
                             <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" required>                        
@@ -280,25 +285,79 @@
                         <button type="submit" class="btn col-12 btn-primary">Enviar</button>
                     </form>
                 </div>
-                <div class="col-4 col-sm-2 col-xl-1 icontacts">
-                    <a href="https://fb.com/sitesunievangelica" target="blank"><i class="fa fa-facebook"></i></a>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+        </div>
+        <!--Contatos-->
+        <div class="container-fluid" id="contato" style="background: url('images/office-real.png');text-align: center">
+            <br/>
+            <br/>
+            <h1 class="display-4" style="color: #fff">Contato</h1>
+            <br/>
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-6 col-xl-4">
+                    <form id="mensagem" style="text-align: justify; color: #fff">
+                        <p class="lead">Sugestões, Dúvidas, Reclamações?<br/>Mande-nos uma mensagem!!</p>
+                        <div class="form-group">
+                            <label for="nomemsg">Nome</label>
+                            <input type="text" class="form-control" id="nomemsg" name="nomemsg" placeholder="Nome" required>                        
+                        </div>
+                        <div class="form-group">
+                            <label for="emailmsg">E-mail</label>
+                            <input type="email" class="form-control" id="emailmsg" name="emailmsg" placeholder="E-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea class="form-control" id="mensagem" name="mensagem" placeholder="Mensagem" requiered></textarea>
+                        </div>                        
+                        <button type="submit" class="btn col-12 btn-primary">Enviar</button>
+                    </form>
+                </div>
+                <br/>
+                <br/>                                
+                <div class="row justify-content-center desktopdisplay">
+                    <div class="col-4 col-sm-4 col-xl-3 icontacts">
+                        <a href="https://fb.com/sitesunievangelica" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <p class="lead">Facebook</p>
+                    </div>
+                    <div class="col-4 col-sm-4 col-xl-3 icontacts instagram">
+                        <a href="http://instagram.com/sitesunievangelica" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <p class="lead">Instagram</p>
+                    </div>
+                    <div class="col-4 col-sm-4 col-xl-3 icontacts minstagram">
+                        <a href="instagram://user?username=sitesunievangelica" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <p class="lead">Instagram</p>
+                    </div>
+                    <div class="col-4 col-sm-4 col-xl-3 icontacts">
+                        <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        <p class="lead">Youtube</p>
+                    </div>
+                    <div class="col-12">
+                        <p class="lead" style="color: #fff; font-size: 25px;"><b>#SitesUnievangelica</b></p>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="row justify-content-center">
+                <p class="col-12 lead mobiledisplay text-white">Siga-nos nas Redes Sociais!!</p>
+                <div class="col-4 col-sm-2 col-xl-3 icontacts mobiledisplay">
+                    <a href="https://fb.com/sitesunievangelica" target="_blank"><i class="fa fa-facebook"></i></a>
                     <p class="lead">Facebook</p>
                 </div>
-                <div class="col-4 col-sm-2 col-xl-1 icontacts instagram">
-                    <a href="http://instagram.com/sitesunievangelica" target="blank"><i class="fa fa-instagram"></i></a>
-                    <p class="lead">Instagram</p>
-                </div>
-                <div class="col-4 col-sm-2 col-xl-1 icontacts minstagram">
+                <div class="col-4 col-sm-2 col-xl-3 icontacts minstagram mobiledisplay">
                     <a href="instagram://user?username=sitesunievangelica" target="blank"><i class="fa fa-instagram"></i></a>
                     <p class="lead">Instagram</p>
                 </div>
-                <div class="col-4 col-sm-2 col-xl-1 icontacts">
+                <div class="col-4 col-sm-2 col-xl-3 icontacts mobiledisplay">
                     <a href="#"><i class="fa fa-youtube-play"></i></a>
                     <p class="lead">Youtube</p>
                 </div>
+                <div class="col-12">
+                    <p class="lead mobiledisplay" style="color: #fff; font-size: 25px"><b>#SitesUnievangelica</b></p>
+                </div>
             </div>
-            <br>
-            <p class="lead" style="color: #fff; font-size: 30px"><b>#SitesUnievangelica</b></p>
             <br/>
             <br/>
             <br/>
@@ -326,7 +385,7 @@
                         </div>
                         <br/>-->
                         <p class="lead" style="text-align: justify">Cadastre a equipe no formulário abaixo para participar da competição.</p>
-                        
+
                         <p class="lead"><b style="color: red"> <small>* Todos os campos são obrigatórios</small></b></p>
                         <div class="container">
                             <form id="formRobocode">
@@ -334,13 +393,13 @@
                                     <label class="control-label ">Nome da Equipe</label>
                                     <input class="form-control" type="text" id="team" name="team" placeholder="Nome"required/>
                                 </div>
-                                 <hr>
+                                <hr>
                                 <div class="form-group col-12">
                                     <label class="control-label">Membro 1</label>
                                 </div>
                                 <div class="form-inline col-12">
-                                        <label class="control-label col-md-1">Nome</label>
-                                        <input class="form-control col-md-11" type="text" id="name1" name="name1" placeholder="Nome Membro 1" required/>
+                                    <label class="control-label col-md-1">Nome</label>
+                                    <input class="form-control col-md-11" type="text" id="name1" name="name1" placeholder="Nome Membro 1" required/>
                                 </div>
                                 <div class="form-inline col-12" style="margin-top: .5rem;">
                                     <label class="col-md-1">Email</label>
@@ -353,8 +412,8 @@
                                     <label class="control-label">Membro 2</label>
                                 </div>
                                 <div class="form-inline col-12">
-                                        <label class="control-label col-md-1">Nome</label>
-                                        <input class="form-control col-md-11" type="text" id="name2" name="name2" placeholder="Nome Membro 2" required/>
+                                    <label class="control-label col-md-1">Nome</label>
+                                    <input class="form-control col-md-11" type="text" id="name2" name="name2" placeholder="Nome Membro 2" required/>
                                 </div>
                                 <div class="form-inline col-12" style="margin-top: .5rem; margin-bottom: 1rem;">
                                     <label class="col-md-1">Email</label>

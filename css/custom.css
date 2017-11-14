@@ -5,8 +5,8 @@ a{color: #fff}
 .icontacts{font-size: 60px;color: #fff;}
 .fa-facebook:hover{color: #3E67B6}
 .fa-instagram:hover{background: -webkit-linear-gradient(45deg, #ffff14, #fd5949, #d6249f, #285AEB);
-                                -webkit-background-clip: text;
-                                -webkit-text-fill-color: transparent;}
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;}
 .fa-youtube-play:hover{color: #cc0000}
 
 .logo{width: 250px;height: 250px;}
@@ -18,7 +18,11 @@ a{color: #fff}
 /*media query icon isntagram*/
 .instagram{display: block;}
 .minstagram{display: none;}
-@media(max-width: 600px){.instagram{display: none;}.minstagram{display: block;}}
+@media(max-width: 500px){.instagram{display: none;}.minstagram{display: block;}}
+
+/*media query rede sociais*/
+.mobiledisplay{display: none;}
+@media(max-width: 500px){.desktopdisplay{display: none;}.mobiledisplay{display: inline}}
 
 .minicursos{
     font-size: 70px;
