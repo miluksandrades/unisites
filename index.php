@@ -243,7 +243,7 @@
                     <img class="img-responsive" src="images/organizacao/bacharel.png" width="170" height="120"/>
                 </div>
                 <div class="col-12 col-sm-4 col-xl-3">
-                    <img class="img-responsive" src="images/organizacao/ftt.png" width="300" height="90"/>
+                    <img class="img-responsive" src="images/organizacao/ftt.png" width="250" height="150"/>
                 </div>
                 <div class="col-12 col-sm-4 col-xl-3">
                     <img class="img-responsive" src="images/organizacao/unievangelica.png" width="180" height="140"/>
