@@ -18,7 +18,7 @@
         <!--Barra de Navagação-->
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-faded">
             <a class="navbar-brand" id="botao-teste" href="#entrada">
-                <img class="img-responsive" src="images/logo-branca.png"margin-left: style="margin-left:30px;" width="85" height="25"/>                
+                <img class="img-responsive" src="images/logo-branca.png"margin-left: style="margin-left:30px;" width="70" height="25"/>                
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -43,9 +43,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contato">Contato</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#" data-toggle="modal" data-target="#modal-robocode" style="margin-top: -3px" class="nav-link"><button class="btn btn-sm btn-primary">Inscrição Robocode</button></a>
-                    </li>
+                    <!--                    <li class="nav-item">
+                                            <a href="#" data-toggle="modal" data-target="#modal-robocode" style="margin-top: -3px" class="nav-link"><button class="btn btn-sm btn-primary">Inscrição Robocode</button></a>
+                                        </li>-->
                 </ul>
 
             </div>
@@ -127,6 +127,29 @@
         <!--Programação-->
         <div class="container-fluid" id="agenda" style="text-align: center; color: #fff; background: url('images/computer.png')">
             <br/>
+            <br/>
+            <br/>
+            <h1 class="display-4">Palestrante Convidado</h1><br/>
+            <br/>
+            <br/>            
+            <p class="display-4">Profº Ph.D. Anderson da Silva Soares</p>
+            <div class="container-fluid">
+                <div class="row justify-content-center">                    
+                    <div class="col-12 col-sm-4">
+                        <img class="img-responsive" src="images/andersson.jpg"/>
+                    </div>
+                    <div class="col-12 col-sm-4">                        
+                        <p class="lead" style="text-align: justify">Possui Doutorado 
+                            em Engenharia Eletrônica 
+                            e Computação pelo Instituto Tecnológico de Aeronáutica - 
+                            ITA. Atualmente é professor do Instituto de Informática 
+                            da Universidade Federal de Goiás onde é membro permanente 
+                            dos programas de Mestrado e Doutorado.</p>
+                        <h1 class="lead bg-info" style="text-align: justify; padding: 10px; border-radius: 5px; font-size: 25px"><b>Palestra: Desafios e oportunidades em um mundo 
+                                orientado a dados</b></h1>
+                    </div>
+                </div>
+            </div>
             <br/>
             <br/>
             <h1 class="display-4">Programação</h1>
@@ -238,24 +261,30 @@
             <h1 class="display-4">Organização</h1>
             <br/>
             <p class="lead" style="font-size: 30px">Realização:</p>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center">                
                 <div class="col-12 col-sm-4 col-xl-3">
-                    <img class="img-responsive" src="images/organizacao/bacharel.png" width="170" height="120"/>
+                    <img class="img-responsive" src="images/organizacao/unievangelica.png" width="200" height="150"/>
+                </div>
+                <div class="col-12 col-sm-4 col-xl-3">
+                    <img class="img-responsive" src="images/organizacao/bacharel.png" width="240" height="180"/>
                 </div>
                 <div class="col-12 col-sm-4 col-xl-3">
                     <img class="img-responsive" src="images/organizacao/ftt.png" width="250" height="150"/>
-                </div>
-                <div class="col-12 col-sm-4 col-xl-3">
-                    <img class="img-responsive" src="images/organizacao/unievangelica.png" width="180" height="140"/>
                 </div>
             </div>
             <br/>
             <p class="lead" style="font-size: 30px">Patrocinadores:</p>
             <div class="row justify-content-center">
-                <div class="col-12 col-sm-4 col-xl-3">
+                <div class="col-12 col-sm-4 col-xl-2">
+                    <img class="img-responsive" src="images/organizacao/caixa.png" width="200" height="60"/>
+                </div>
+                <div class="col-12 col-sm-4 col-xl-2">
+                    <img class="img-responsive" src="images/organizacao/protec.png" width="200" height="90"/>
+                </div>
+                <div class="col-12 col-sm-4 col-xl-2">
                     <img class="img-responsive" src="images/organizacao/telgo-light.png" width="200" height="90"/>
                 </div>
-                <div class="col-12 col-sm-4 col-xl-3">
+                <div class="col-12 col-sm-4 col-xl-2">
                     <img class="img-responsive" src="images/organizacao/teuto.png" width="200" height="80"/>
                 </div>
             </div>
@@ -298,7 +327,7 @@
             <br/>
             <div class="row justify-content-center">
                 <div class="col-12 col-sm-6 col-xl-4">
-                    <form id="mensagem" style="text-align: justify; color: #fff">
+                    <form id="mensagemform" style="text-align: justify; color: #fff">
                         <p class="lead">Sugestões, Dúvidas, Reclamações?<br/>Mande-nos uma mensagem!!</p>
                         <div class="form-group">
                             <label for="nomemsg">Nome</label>
@@ -311,8 +340,9 @@
                         <div class="form-group">
                             <label for="mensagem">Mensagem</label>
                             <textarea class="form-control" id="mensagem" name="mensagem" placeholder="Mensagem" requiered></textarea>
-                        </div>                        
-                        <button type="submit" class="btn col-12 btn-primary">Enviar</button>
+                        </div>  
+                        <p class="lead col-12 bg-success white-text confirmmsg" style="text-align: center; border-radius: 5px;">Enviado com sucesso!!!</p>
+                        <button type="submit" id="" class="btn col-12 btn-primary">Enviar</button>
                     </form>
                 </div>
                 <br/>
@@ -378,11 +408,6 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <!--<div class="row justify-content-center">
-                            <div class="col-12 col-sm-3 col-xl-3" style="text-align: center">
-                                <i class="fa fa-android icones"></i>
-                            </div>                            
-                        </div>
                         <br/>-->
                         <p class="lead" style="text-align: justify">Cadastre a equipe no formulário abaixo para participar da competição.</p>
 
@@ -424,7 +449,7 @@
                                 <div class="form-check col-12">
                                     <label class="form-check-label">
                                         <input type="checkbox" id="checkedital" name="checkedital" class="form-check-input">
-                                        Aceito os termos do <a href="" target="blank" style="color: #285AEB">Edital</a>
+                                        Aceito os termos do <a href="files/edital-robocode.pdf" target="blank" style="color: #285AEB">Edital</a>
                                     </label>
                                     <div id="erroredital" class="erroredital"></div>
                                 </div>
@@ -455,7 +480,7 @@
                                 <i class="fa fa-file-text-o icones"></i>
                             </div>
                             <div class="col-12 col-sm-6 col-xl-6">
-                                <p class="lead">Apresentação de Banners dos projetos do 3º Período</p>
+                                <p class="lead"><b>Apresentação de <i>Banners</i> - 2º período</b></p>
                             </div>                           
                         </div>
                     </div>
@@ -482,7 +507,7 @@
                                 <i class="fa fa-file-o icones"></i>
                             </div>
                             <div class="col-12 col-sm-6 col-xl-6">
-                                <p class="lead">Apresentação de Papers dos projetos do 4º Período</p>
+                                <p class="lead"><b>Apresentação de <i>Papers</i> - 4º período</b></p>
                             </div>                            
                         </div>
                     </div>
@@ -509,9 +534,19 @@
                                 <i class="fa fa-book icones"></i>
                             </div>
                             <div class="col-12 col-sm-6 col-xl-6">
-                                <p class="lead">Minicursos ministrados pelos alunos do 5º Período</p>
+                                <p class="lead"><b>Minicursos - 5º período</b></p>
+                            </div>
+                        </div>
+                        <br/>
+                        <br/>
+                        <p class="lead" style="text-align: center"><b>NOVIDADE!!!</b></p>
+                        <p class="lead" style="text-align: center"><b>Minicurso - Introdução ao Angular</b></p>
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-sm-3">
+                                <img src="images/angular.png" class="img-fluid img-responsive"/>
                             </div>                            
                         </div>
+                        <p class="lead" style="text-align: center"><b>Responsáveis: Squadra Tecnologia</b></p>
                         <br/>
                         <p class="lead" style="text-align: center"><b>Minicursos EAD<br/>Clique no ícone do curso para se inscrever</b></p>
                         <br/>
@@ -574,7 +609,7 @@
                                 <i class="fa fa-television icones"></i>
                             </div>
                             <div class="col-12 col-sm-6 col-xl-6">
-                                <p class="lead">Workshops dos projetos desenvolvidos do 7º Período</p>
+                                <p class="lead"><b>Workshop de projetos - 7º período</b></p>
                             </div>                            
                         </div>
                     </div>
@@ -632,7 +667,7 @@
                                 <i class="fa fa-lightbulb-o icones"></i>
                             </div>
                             <div class="col-12 col-sm-6 col-xl-6">
-                                <p class="lead">Apresentação de projetos do 6º Período</p>
+                                <p class="lead"><b>Apresentação de Ideias - 6º período</b></p>
                             </div>                            
                         </div>
                     </div>
@@ -659,12 +694,12 @@
                                 <i class="fa fa-code icones"></i>
                             </div>
                             <div class="col-12 col-sm-7 col-xl-7">
-                                <p class="lead">I Torneio Robocode do curso de Engenharia de Computação.</p>
+                                <p class="lead">I Torneio Robocode do Curso de Engenharia de Computação</p>
                             </div>                            
                         </div>
                         <br/>
-                        <p><a href="robocode/edital-robocode.pdf" target="_blank" style="color: red; text-decoration: none">Clique aqui</a> para visualizar o regulamento da competição.</p>
-                        <p class="lead"> <a href="robocode" style="margin-top: -3px" class="nav-link"><button class="btn btn-sm btn-primary">P&aacute;gina do Torneio Robocode</button></a></p>
+                        <p><a href="files/edital-robocode.pdf" target="_blank" style="color: red; text-decoration: none">Clique aqui</a> para visualizar o regulamento da competição.</p>
+<!--                        <p class="lead"> <a href="robocode" style="margin-top: -3px" class="nav-link"><button class="btn btn-sm btn-primary">P&aacute;gina do Torneio Robocode</button></a></p>-->
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
@@ -737,6 +772,8 @@
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
         <script src="controller/app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase.js"></script>
-        <script src="controller/robocode/robocode.js"></script>        
+        <script src="controller/robocode/robocode.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase.js"></script>
+        <script src="controller/mensager.js"></script>
     </body>
 </html>
