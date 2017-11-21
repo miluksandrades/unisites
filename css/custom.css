@@ -42,3 +42,13 @@ a{color: #fff}
 .confirmmsg{
     display: none;
 }
+
+.activitys{
+  color: #000;
+  text-decoration: none;
+}
+
+.activitys:hover{
+  color: #004085;
+  text-decoration: none;
+}
