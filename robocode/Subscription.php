@@ -2,8 +2,8 @@
 
 require_once "MemberModel.php";
 require_once "TeamModel.php";
-require_once "phpmailer\class.phpmailer.php";
-require_once "phpmailer\class.smtp.php";
+require_once "phpmailer/class.phpmailer.php";
+require_once "phpmailer/class.smtp.php";
 
 class Subscription
 {

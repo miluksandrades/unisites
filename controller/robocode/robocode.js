@@ -33,7 +33,7 @@ function enviaEquipe(e){
     var subObj = { teamName: teamName, member1Name: member1Name, member2Name: member2Name, member1Email: member1Email, member2Email: member2Email, member1Period: member1Period, member2Period: member2Period};
     $.ajax({
         method: "POST",
-        url: "robocode/subscription.php",
+        url: "robocode/Subscription.php",
         contentType: "application/json; charset=utf-8",
         data: JSON.stringify(subObj)
     })
