@@ -62,7 +62,7 @@ class Subscription
         //Define o remetente
         $mail->SetFrom('contato@', 'SITES - ROBOCODE');
         //$mail->AddReplyTo('recrutadorsysrecruit@gmail.com', $nome);
-        $mail->Subject = 'Confirmacao de Inscricao - ROBOCODE';
+        $mail->Subject = 'Confirmação de Inscrição - ROBOCODE';
           
         $body = "<h1><strong> 1&ordm; TORNEIO ROBOCODE DA UNIEVANG&Eacute;LICA - SITES</strong></h1></br>";
         $body .= "Sua inscri&ccedil;&atilde;o foi confirmada para o 1	&ordm; Torneio ROBOCODE da Unievang&eacute;lica.</br></br>";
