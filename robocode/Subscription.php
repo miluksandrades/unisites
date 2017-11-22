@@ -50,16 +50,16 @@ class Subscription
         $mail = new PHPMailer(true);
         $mail->IsSMTP();
 
-        $mail->Host = 'mail.sitesunievangelica.com.br';//Servidor SMTP
+        $mail->Host = 'mail.com.br';//Servidor SMTP
         $mail->SMTPAuth = true;//Usa a autenticação SMTP
         $mail->SMTPSecure = 'ssl';
         $mail->SMTPDebug = false;
         $mail->SMTPKeepAlive = true;
         $mail->Port = 465;//Porta de conexão SMTP
-        $mail->Username = 'contato@sitesunievangelica.com.br';//Usario do seervidor
-        $mail->Password = 'whB*T8UI7&,6';
+        $mail->Username = 'contato@';//Usario do seervidor
+        $mail->Password = '123';
         //Define o remetente
-        $mail->SetFrom('contato@sitesunievangelica.com.br', 'SITES - ROBOCODE');
+        $mail->SetFrom('contato@', 'SITES - ROBOCODE');
         //$mail->AddReplyTo('recrutadorsysrecruit@gmail.com', $nome);
         $mail->Subject = 'Confirmacao de Inscricao - ROBOCODE';
           
