@@ -58,6 +58,7 @@ class Subscription
         $mail->Port = 465;//Porta de conexão SMTP
         $mail->Username = 'contato@';//Usario do seervidor
         $mail->Password = '123';
+        $mail->CharSet = 'UTF-8';
         //Define o remetente
         $mail->SetFrom('contato@', 'SITES - ROBOCODE');
         //$mail->AddReplyTo('recrutadorsysrecruit@gmail.com', $nome);
