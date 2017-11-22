@@ -71,9 +71,6 @@ class Subscription
 
         //Define o detinatário
         $mail->AddAddress($subsData->member1Email, 'SITES');
-        $mail->MsgHTML($body);
-        $mail->Send();
-
         $mail->AddAddress($subsData->member2Email, 'SITES');
         $mail->MsgHTML($body);
         $mail->Send();
