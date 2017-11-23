@@ -6,8 +6,15 @@ require_once "phpmailer/class.phpmailer.php";
 require_once "phpmailer/class.smtp.php";
 
 class Subscription
-{
-    public function __construct()
+{   
+    private $mail;
+
+    public function __construct(){
+        $this->configEmail();
+        $this->handle();
+    }
+
+    public function handle()
     {
         $jsonData = file_get_contents('php://input');
 
@@ -15,26 +22,47 @@ class Subscription
            
            try{ 
                 $subsData = json_decode($jsonData);
+                $existTeam = false;
+                $token = md5(microtime());
 
                 $member1 = new MemberModel();
                 $member2 = new MemberModel();
+                $teamModel = new TeamModel();
                 if($member1->loadByEmail($subsData->member1Email)){
-                    $teamModel = new TeamModel();
-                    $teamModel->setId($member1->getTeamId());
-                    $member1->deleteFromTeam();
-                    $teamModel->delete();
+                    $teamModel->loadById($member1->getTeamId());
+                    $teamModel->cancel_token = $token;
+                    $teamModel->updCancelToken();
+
+                    $existTeam = true;
                 }else if($member2->loadByEmail($subsData->member2Email)){
-                    $teamModel = new TeamModel();
-                    $teamModel->setId($member2->getTeamId());
-                    $member2->deleteFromTeam();
-                    $teamModel->delete();
+                    $teamModel->loadById($member2->getTeamId());
+                    $teamModel->cancel_token = $token;
+                    $teamModel->updCancelToken();
+
+                    $existTeam = true;
                 }
 
-                $this->register($subsData);
+                $this->register($subsData, $existTeam, $token);
 
-                $this->sendMail($subsData);
+                if(!$existTeam){
+                    $this->confirmInscription($subsData);
+                    echo 'success';
+                }else{
+                    $memberM = new MemberModel();
+                    $members  = $memberM->loadMembersByTeam($teamModel->getId());
 
-                echo "success";
+                    if($members){
+                        $nameMembers = "";
+                        foreach($members as $row){
+                            $this->mail->AddAddress($row['email'], 'SITES');
+                            $nameMembers .= $row['name'].', ';
+                        }
+                        $nameMembers = substr($nameMembers, 0, -2);
+
+                        $this->confirmCancel($teamModel->name, $nameMembers, $token);
+                    }
+                    echo 'success,cancel';
+                } 
            }catch(\Exception $ex){
                echo "Inscrição não realizada. Tente novamente mais tarde.";
                exit();
@@ -46,41 +74,62 @@ class Subscription
         }
     }
 
-    private function sendMail($subsData){
-        $mail = new PHPMailer(true);
-        $mail->IsSMTP();
+    private function configEmail(){
+        $this->mail = new PHPMailer(true);
+        $this->mail->IsSMTP();
 
-        $mail->Host = 'mail.com.br';//Servidor SMTP
-        $mail->SMTPAuth = true;//Usa a autenticação SMTP
-        $mail->SMTPSecure = 'ssl';
-        $mail->SMTPDebug = false;
-        $mail->SMTPKeepAlive = true;
-        $mail->Port = 465;//Porta de conexão SMTP
-        $mail->Username = 'contato@';//Usario do seervidor
-        $mail->Password = '123';
-        $mail->CharSet = 'UTF-8';
+        $this->mail->Host = 'mail.com.br';//Servidor SMTP
+        $this->mail->SMTPAuth = true;//Usa a autenticação SMTP
+        $this->mail->SMTPSecure = 'ssl';
+        $this->mail->SMTPDebug = false;
+        $this->mail->SMTPKeepAlive = true;
+        $this->mail->Port = 465;//Porta de conexão SMTP
+        $this->mail->Username = 'contato@.com.br';//Usario do seervidor
+        $this->mail->Password = '123';
+        $this->mail->CharSet = 'UTF-8';
         //Define o remetente
-        $mail->SetFrom('contato@', 'SITES - ROBOCODE');
-        //$mail->AddReplyTo('recrutadorsysrecruit@gmail.com', $nome);
-        $mail->Subject = 'Confirmação de Inscrição - ROBOCODE';
+        $this->mail->SetFrom('contato@.com.br', 'SITES - ROBOCODE');
+    }
+
+    private function confirmInscription($subsData){
+        $this->mail->Subject = 'Confirmação de Inscrição - ROBOCODE';
           
         $body = "<h1><strong> 1&ordm; TORNEIO ROBOCODE DA UNIEVANG&Eacute;LICA - SITES</strong></h1></br>";
-        $body .= "Sua inscri&ccedil;&atilde;o foi confirmada para o 1	&ordm; Torneio ROBOCODE da Unievang&eacute;lica.</br></br>";
+        $body .= "Sua inscri&ccedil;&atilde;o foi confirmada para o 1&ordm; Torneio ROBOCODE da Unievang&eacute;lica.</br></br>";
         $body .= "<strong>Equipe:</strong> ".$subsData->teamName."</br>";
         $body .= "<strong>Membros:</strong> ". $subsData->member1Name . " e " . $subsData->member2Name ."</br></br>";
 
         //Define o detinatário
-        $mail->AddAddress($subsData->member1Email, 'SITES');
-        $mail->AddAddress($subsData->member2Email, 'SITES');
-        $mail->MsgHTML($body);
-        $mail->Send();
+        $this->mail->AddAddress($subsData->member1Email, 'SITES');
+        $this->mail->AddAddress($subsData->member2Email, 'SITES');
+        $this->mail->MsgHTML($body);
+        $this->mail->Send();
             
     }
 
-    private function register($jsonData)
+    private function confirmCancel($teamName, $membersName, $token){
+
+        $this->mail->Subject = 'Cancelamento de Inscrição - ROBOCODE';
+          
+        $body = "<h1><strong> 1&ordm; TORNEIO ROBOCODE DA UNIEVANG&Eacute;LICA - SITES</strong></h1></br>";
+        $body .= "Recebemos uma solicita&ccedil;&atilde;o para o cancelamento da inscri&ccedil;&atilde;o de sua equipe devido a realiza&ccedil;&atilde;o de uma nova inscri&ccedil;&atilde;o de um membro.</br></br>";
+        $body .= "<strong>Equipe:</strong> ".$teamName."</br>";
+        $body .= "<strong>Membros:</strong> ". $membersName ."</br></br>";
+        $body .= "<a href='http://localhost:90/unisites-master/robocode/UnSubscription.php?token_cancel=".$token."'>Clique aqui</a> para confirmar o cancelamento desta equipe.";
+        
+        //Define o detinatário
+        $this->mail->MsgHTML($body);
+        $this->mail->Send();
+    }
+
+    private function register($jsonData, $wait_activation, $token)
     {
         $teamModel = new TeamModel();
         $teamModel->name = $jsonData->teamName;
+        if($wait_activation){
+            $teamModel->cancel_token = $token;
+            $teamModel->wait_activation = true;
+        }
         $teamModel->save();
         
         $member1 = new MemberModel();

@@ -38,9 +38,13 @@ function enviaEquipe(e){
         data: JSON.stringify(subObj)
     })
     .done(function( msg ) {
-        if(msg === 'success'){
+        if(msg.indexOf('success') > -1){
             $('#modal-robocode').modal('hide');
-            alert("Inscrição realizada com sucesso!");
+            if(msg.indexOf('cancel') > -1){
+                alert("Solicitação de Inscrição registrada! Há algum membro desta nova equipe já inscrito em outra equipe. Ele receberá um email para confirmar o cancelamento de sua primeira inscrição.");
+            }else{
+                alert("Inscrição realizada com sucesso!");
+            }
            document.getElementById('formRobocode').reset();
         }else{
             alert(msg);

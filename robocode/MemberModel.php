@@ -28,7 +28,9 @@ class MemberModel
 
     public function loadByEmail($email)
     {
-         $sql = "SELECT id, name, email, period, team_id FROM member WHERE email = :email";
+         $sql =  " SELECT mb.id, mb.name, mb.email, mb.period, mb.team_id FROM member mb";
+         $sql .= "  INNER JOIN team tm ON tm.id = mb.team_id";
+         $sql .= " WHERE mb.email = :email AND tm.cancel IS NULL AND tm.wait_activation = 0";
          $result = false;
 
         $query = $this->connection->prepare($sql);
@@ -49,6 +51,19 @@ class MemberModel
         return false;
     }
 
+    public function loadMembersByTeam($team_id)
+    {
+        $sql =  " SELECT mb.id, mb.name, mb.email, mb.period, mb.team_id FROM member mb";
+        $sql .= "  INNER JOIN team tm ON tm.id = mb.team_id";
+        $sql .= " WHERE mb.team_id = :team_id AND tm.cancel IS NULL";
+
+        $query = $this->connection->prepare($sql);
+        $query->bindParam(':team_id', $team_id);
+        $query->execute();
+
+        return $query->fetchAll(PDO::FETCH_ASSOC);
+    }
+
     public function save()
     {
         $sql = " INSERT INTO member (name, email, period, team_id) VALUES (:name, :email, :period, :team_id)";
@@ -61,14 +76,5 @@ class MemberModel
         $query->execute();
 
         return $this->id = $this->connection->lastInsertId();
-    }
-
-    public function deleteFromTeam()
-    {
-        $sql = " DELETE FROM member WHERE team_id = :team_id";
-        
-        $query = $this->connection->prepare($sql); 
-        $query->bindParam(':team_id', $this->teamId);
-        $query->execute();
     }
 }
