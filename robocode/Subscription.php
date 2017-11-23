@@ -64,6 +64,7 @@ class Subscription
                     echo 'success,cancel';
                 } 
            }catch(\Exception $ex){
+               //echo $ex->getMessage();
                echo "Inscrição não realizada. Tente novamente mais tarde.";
                exit();
            }
@@ -84,11 +85,11 @@ class Subscription
         $this->mail->SMTPDebug = false;
         $this->mail->SMTPKeepAlive = true;
         $this->mail->Port = 465;//Porta de conexão SMTP
-        $this->mail->Username = 'contato@.com.br';//Usario do seervidor
+        $this->mail->Username = 'contato.com.br';//Usario do seervidor
         $this->mail->Password = '123';
         $this->mail->CharSet = 'UTF-8';
         //Define o remetente
-        $this->mail->SetFrom('contato@.com.br', 'SITES - ROBOCODE');
+        $this->mail->SetFrom('contato.com.br', 'SITES - ROBOCODE');
     }
 
     private function confirmInscription($subsData){
@@ -115,7 +116,7 @@ class Subscription
         $body .= "Recebemos uma solicita&ccedil;&atilde;o para o cancelamento da inscri&ccedil;&atilde;o de sua equipe devido a realiza&ccedil;&atilde;o de uma nova inscri&ccedil;&atilde;o de um membro.</br></br>";
         $body .= "<strong>Equipe:</strong> ".$teamName."</br>";
         $body .= "<strong>Membros:</strong> ". $membersName ."</br></br>";
-        $body .= "<a href='http://localhost:90/unisites-master/robocode/UnSubscription.php?token_cancel=".$token."'>Clique aqui</a> para confirmar o cancelamento desta equipe.";
+        $body .= "<a href='http://www.sitesunievangelica.com.br/robocode/UnSubscription.php?token_cancel=".$token."'>Clique aqui</a> para confirmar o cancelamento desta equipe.";
         
         //Define o detinatário
         $this->mail->MsgHTML($body);
