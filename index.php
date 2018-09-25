@@ -2,9 +2,9 @@
 <html lang="pt-br">
 
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>XVII Seminário Interdisciplinar de Tecnologia e Sociedade</title>
+        <title>XVII SeminÃ¡rio Interdisciplinar de Tecnologia e Sociedade</title>
         <link href="images/Logo circle.png" type="img/png" rel="icon" />
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css" />
@@ -17,7 +17,7 @@
     </head>
 
     <body>
-        <!--Barra de Navagação-->
+        <!--Barra de NavagaÃ§Ã£o-->
         <nav class="navbar navbar-expand-md navbar-dark fixed-top">
             <a class="navbar-brand" id="botao-teste" href="#entrada">
                 <img class="img-responsive" src="images/logo-branca.png" margin-left: style="margin-left:30px;" width="70" height="25" />
@@ -29,7 +29,7 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#entrada">Início
+                        <a class="nav-link" href="#entrada">InÃ­cio
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
@@ -40,7 +40,7 @@
                         <a class="nav-link" href="#palestra">Palestrante</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#agenda">Programação</a>
+                        <a class="nav-link" href="#agenda">ProgramaÃ§Ã£o</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#equipe">Equipe</a>
@@ -52,21 +52,21 @@
                         <a class="nav-link" href="#contato">Contato</a>
                     </li>
                     <li class="nav-item">
-                            <a href="#" data-toggle="modal" data-target="#modal-robocode" style="margin-top: -3px" class="nav-link"><button class="btn btn-sm btn-primary">Inscrição Robocode</button></a>
+                            <a href="#" data-toggle="modal" data-target="#modal-robocode" style="margin-top: -3px" class="nav-link"><button class="btn btn-sm btn-primary">InscriÃ§Ã£o Robocode</button></a>
                     </li>
                 </ul>
 
             </div>
         </nav>
 
-        <!-- Cabeçalho -->
+        <!-- CabeÃ§alho -->
         <header class="masthead" id="entrada">
             <div class="intro-body">
                 <div class="container conteudo">
                     <div class="row">
                         <div class="col-lg-8 mx-auto" id="botao-teste">
                             <img class="img-responsive logo" src="images/logo_sites.png" />
-                            <h1 class="display-4" style="color: #fff">XVII Seminário Interdisciplinar de Tecnologia e Sociedade</h1>
+                            <h1 class="display-4" style="color: #fff">XVII SeminÃ¡rio Interdisciplinar de Tecnologia e Sociedade</h1>
                             <a href="#atividades" id="about" class="btn btn-circle js-scroll-trigger">
                                 <i class="fa fa-angle-double-down animated"></i>
                             </a>
@@ -91,8 +91,8 @@
                         <i>Banners</i>
                     </h4>
                     <p class="lead">
-                        <b>Apresentação de
-                            <i>Banners</i> - 2º período</b>
+                        <b>ApresentaÃ§Ã£o de
+                            <i>Banners</i> - 2Âº perÃ­odo</b>
                     </p>
                 </div>
                 <div class="col-12 col-sm-3 col-xl-2">
@@ -101,15 +101,15 @@
                         <i>Papers</i>
                     </h4>
                     <p class="lead">
-                        <b>Apresentação de
-                            <i>Papers</i> - 4º período</b>
+                        <b>ApresentaÃ§Ã£o de
+                            <i>Papers</i> - 4Âº perÃ­odo</b>
                     </p>
                 </div>
                 <div class="col-12 col-sm-3 col-xl-2">
                     <i class="fa fa-lightbulb-o icones"></i>
-                    <h4>Feira de Idéias</h4>
+                    <h4>Feira de IdÃ©ias</h4>
                     <p class="lead">
-                        <b>Apresentação de Ideias - 6º período</b>
+                        <b>ApresentaÃ§Ã£o de Ideias - 6Âº perÃ­odo</b>
                     </p>
                 </div>
                 <div class="col-12 col-sm-3 col-xl-2">
@@ -118,7 +118,7 @@
                         <i>Workshops</i>
                     </h4>
                     <p class="lead">
-                        <b>Workshop de projetos - 7º período</b>
+                        <b>Workshop de projetos - 7Âº perÃ­odo</b>
                     </p>
                 </div>
             </div>
@@ -170,15 +170,15 @@
             <h1 class="display-4">Palestrante Convidado</h1>
             <br/>
             <br/>
-            <p class="display-4">Profº Ph.D. Anderson da Silva Soares</p>
+            <p class="display-4">ProfÂº Ph.D. Anderson da Silva Soares</p>
             <div class="container-fluid">
                 <div class="row justify-content-center">
                     <div class="col-12 col-sm-4">
                         <img class="img-responsive" src="images/andersson.jpg" />
                     </div>
                     <div class="col-12 col-sm-4">
-                        <p class="lead" style="text-align: justify">Possui Doutorado em Engenharia Eletrônica e Computação pelo Instituto Tecnológico de Aeronáutica - ITA.
-                            Atualmente é professor do Instituto de Informática da Universidade Federal de Goiás onde é membro
+                        <p class="lead" style="text-align: justify">Possui Doutorado em Engenharia EletrÃ´nica e ComputaÃ§Ã£o pelo Instituto TecnolÃ³gico de AeronÃ¡utica - ITA.
+                            Atualmente Ã© professor do Instituto de InformÃ¡tica da Universidade Federal de GoiÃ¡s onde Ã© membro
                             permanente dos programas de Mestrado e Doutorado.</p>
                         <h1 class="lead bg-success" style="text-align: justify; color: #fff; padding: 10px; border-radius: 5px; font-size: 25px">
                             <b>Palestra: Desafios e oportunidades em um mundo orientado a dados</b>
@@ -190,12 +190,12 @@
             <br/>
             <br/>
         </div>
-        <!--Programação-->
+        <!--ProgramaÃ§Ã£o-->
         <div class="container-fluid" id="agenda" style="text-align: center; color: #fff; background: url('images/computer.png')">
             <br/>
             <br/>
             <br/>
-            <h1 class="display-4">Programação</h1>
+            <h1 class="display-4">ProgramaÃ§Ã£o</h1>
             <br/>
             <br/>
             <div id="carouselprogramacao" class="carousel slide" data-ride="carousel">
@@ -214,7 +214,7 @@
                             </div>
                             <div class="col-12 col-sm-3 col-xl-3 bg-primary">
                                 <p class="lead">19:20 hs</p>
-                                <p class="lead">Cerimonial de Abertura do Seminário</p>
+                                <p class="lead">Cerimonial de Abertura do SeminÃ¡rio</p>
                             </div>
                         </div>
                         <br/>
@@ -288,7 +288,7 @@
                 </a>
                 <a class="carousel-control-next" href="#carouselprogramacao" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Próximo</span>
+                    <span class="sr-only">PrÃ³ximo</span>
                 </a>
                 <br/>
                 <br/>
@@ -301,9 +301,9 @@
             <br/>
             <br/>
             <br/>
-            <h1 class="display-4">Organização</h1>
+            <h1 class="display-4">OrganizaÃ§Ã£o</h1>
             <br/>
-            <p class="lead" style="font-size: 30px">Realização:</p>
+            <p class="lead" style="font-size: 30px">RealizaÃ§Ã£o:</p>
             <div class="row justify-content-center">
                 <div class="col-12 col-sm-4 col-xl-3 patrocinio">
                     <img class="img-responsive" src="images/organizacao/unievangelica.png" width="200" height="150" />
@@ -382,7 +382,7 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-sm-6 col-xl-4">
                     <form id="mensagemform" style="text-align: justify; color: #fff">
-                        <p class="lead">Sugestões, Dúvidas, Reclamações?
+                        <p class="lead">SugestÃµes, DÃºvidas, ReclamaÃ§Ãµes?
                             <br/>Mande-nos uma mensagem!!</p>
                         <div class="form-group">
                             <label for="nomemsg">Nome</label>
@@ -455,12 +455,12 @@
         </div>
         <br/>
         <p class="lead" style="text-align: center; font-size: 15px">
-            <b>Copyright &copy; 2017 Engenharia de Computação. Todos os Direitos Reservados</b>
+            <b>Copyright &copy; 2017 Engenharia de ComputaÃ§Ã£o. Todos os Direitos Reservados</b>
         </p>
 
         <!--Modal's-->
 
-        <!--Modal inscrição-->
+        <!--Modal inscriÃ§Ã£o-->
         <div class="modal fade" id="modal-robocode" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
@@ -477,9 +477,9 @@
                             </div>                            
                         </div>
                         <br/>-->
-                        <p class="lead" style="text-align: justify">Cadastre a equipe no formulário abaixo para participar da competição.</p>
+                        <p class="lead" style="text-align: justify">Cadastre a equipe no formulÃ¡rio abaixo para participar da competiÃ§Ã£o.</p>
                         
-                        <p class="lead"><b style="color: red"> <small>* Todos os campos são obrigatórios</small></b></p>
+                        <p class="lead"><b style="color: red"> <small>* Todos os campos sÃ£o obrigatÃ³rios</small></b></p>
                         <div class="container">
                             <form id="formRobocode">
                                 <div class="form-group col-12">
@@ -550,7 +550,7 @@
                             </div>
                             <div class="col-12 col-sm-6 col-xl-6">
                                 <p class="lead">
-                                    <b>Minicursos - 5º período</b>
+                                    <b>Minicursos - 5Âº perÃ­odo</b>
                                 </p>
                             </div>
                         </div>
@@ -560,7 +560,7 @@
                             <b>NOVIDADE!!!</b>
                         </p>
                         <p class="lead" style="text-align: center">
-                            <b>Minicurso - Introdução ao Angular</b>
+                            <b>Minicurso - IntroduÃ§Ã£o ao Angular</b>
                         </p>
                         <div class="row justify-content-center">
                             <div class="col-12 col-sm-3">
@@ -568,12 +568,12 @@
                             </div>
                         </div>
                         <p class="lead" style="text-align: center">
-                            <b>Responsáveis: Squadra Tecnologia</b>
+                            <b>ResponsÃ¡veis: Squadra Tecnologia</b>
                         </p>
                         <br/>
                         <p class="lead" style="text-align: center">
                             <b>Minicursos EAD
-                                <br/>Clique no ícone do curso para se inscrever</b>
+                                <br/>Clique no Ã­cone do curso para se inscrever</b>
                         </p>
                         <br/>
                         <div class="row justify-content-center" style="text-align: center">
@@ -599,7 +599,7 @@
                                     <i class="icofont icofont-tools-alt-2 minicursos"></i>
                                 </a>
                                 <p class="lead">
-                                    <b>Manutenção de Computadores</b>
+                                    <b>ManutenÃ§Ã£o de Computadores</b>
                                 </p>
                             </div>
                         </div>
@@ -619,7 +619,7 @@
                                     <i class="icofont icofont-file-image minicursos"></i>
                                 </a>
                                 <p class="lead">
-                                    <b>Edição de Imagens - Filmora</b>
+                                    <b>EdiÃ§Ã£o de Imagens - Filmora</b>
                                 </p>
                             </div>
                             <div class="col-12 col-sm-3 col-xl-3">
@@ -641,7 +641,7 @@
                         </div>
                         <br/>
                         <p class="lead">OBS:
-                            <b style="color: red">As Inscrições estarão abertas até dia 26/11/2017</b>
+                            <b style="color: red">As InscriÃ§Ãµes estarÃ£o abertas atÃ© dia 26/11/2017</b>
                         </p>
                     </div>
                     <div class="modal-footer">
@@ -669,10 +669,10 @@
                         </div>
                         <br/>
                         <p class="lead" style="text-align: justify">
-                            <b>O jogo Investidor “DA HORA” tem como objetivo envolver os alunos do curso de Engenharia de Computação
-                                nas atividades desenvolvidas nos Seminários Interdisciplinares de Tecnologia e Sociedade - SITES.
-                                É utilizada como estratégia motivacional cujo desígnio é fortalecer a percepção dos alunos quanto
-                                aos projetos que são desenvolvidos ao longo das disciplinas de Projeto Interdisciplinar.</b>
+                            <b>O jogo Investidor Â“DA HORAÂ” tem como objetivo envolver os alunos do curso de Engenharia de ComputaÃ§Ã£o
+                                nas atividades desenvolvidas nos SeminÃ¡rios Interdisciplinares de Tecnologia e Sociedade - SITES.
+                                Ã‰ utilizada como estratÃ©gia motivacional cujo desÃ­gnio Ã© fortalecer a percepÃ§Ã£o dos alunos quanto
+                                aos projetos que sÃ£o desenvolvidos ao longo das disciplinas de Projeto Interdisciplinar.</b>
                         </p>
                         <p class="lead">
                             <b>Edital do Jogo da Hora:
@@ -704,7 +704,7 @@
                             </div>
                             <div class="col-12 col-sm-6 col-xl-6">
                                 <p class="lead">
-                                    <b>Apresentação de Ideias - 6º período</b>
+                                    <b>ApresentaÃ§Ã£o de Ideias - 6Âº perÃ­odo</b>
                                 </p>
                             </div>
                         </div>
@@ -732,12 +732,12 @@
                                 <i class="fa fa-code icones"></i>
                             </div>
                             <div class="col-12 col-sm-7 col-xl-7">
-                                <p class="lead">I Torneio Robocode do Curso de Engenharia de Computação</p>
+                                <p class="lead">I Torneio Robocode do Curso de Engenharia de ComputaÃ§Ã£o</p>
                             </div>
                         </div>
                         <br/>
                         <p>
-                            <a href="files/edital-robocode.pdf" target="_blank" style="color: red; text-decoration: none">Clique aqui</a> para visualizar o regulamento da competição.</p>
+                            <a href="files/edital-robocode.pdf" target="_blank" style="color: red; text-decoration: none">Clique aqui</a> para visualizar o regulamento da competiÃ§Ã£o.</p>
                         <!--                        <p class="lead"> <a href="robocode" style="margin-top: -3px" class="nav-link"><button class="btn btn-sm btn-primary">P&aacute;gina do Torneio Robocode</button></a></p>-->
                     </div>
                     <div class="modal-footer">
